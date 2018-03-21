@@ -24,6 +24,7 @@ Build a Ruby on Rails app that calls an external weather service API and display
 * Write a method that converts current/high/low/average temperature from fahrenheit to celcius and display.
 
 ## Bonus
+* Cache the API call
 * Display any other relevant data and use icons/images where possible.
 * AJAX as much as possible
 * Include a toggle button to switch from fahrenheit to celcius.
