@@ -8,7 +8,7 @@ Build a Ruby on Rails app that calls an external weather service API and display
 
 * Import a CSS Framework - Use default components as style/design is not a requirement
 
-* Use any free weather API of your choosing. Here are few options but feel free to use another. If the free tier is missing data you need just use another attribute and note it with comments. 
+* Use any free weather API of your choosing. Here are few options but feel free to use another. If the free tier is missing data you need just use another attribute and note it with comments.
   * https://darksky.net/dev
   * https://openweathermap.org/api
 
@@ -32,5 +32,14 @@ Build a Ruby on Rails app that calls an external weather service API and display
 
 * RSPEC tests for model and API methods used.
 
-* Host on Heroku and send us the URL and github repo url
+
+## Submitting the project
+
+* Spin up a new app and commit to GitHub as first commit.
+
+* Create a branch and commit all project changes to that branch.
+
+* Create a pull request when the project is complete.
+
+* Host on Heroku and send us the URL and github pull request url.
 
