@@ -1,0 +1,7 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  = link_to 'Henri Weather', root_path, class: 'navbar-brand'
+  div.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item
+        = link_to 'Add location', new_location_path
+    button.btn.btn-outline-success.my-2.my-sm-0#refresh Refresh
