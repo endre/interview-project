@@ -1,0 +1,18 @@
+.row
+  .col-sm
+    table.table#weather-index
+      thead
+        tr
+          th Location (zip)
+          th Current temp
+          th High temp
+          th Low temp
+          th Average temp
+      tbody
+        / - @locations.each do |city|
+        /   tr
+        /     td= "#{city.name} (#{city.zip})"
+        /     td= city.current_temperature
+        /     td= city.high_temperature
+        /     td= city.low_temperature
+        /     td= city.average_temperature
