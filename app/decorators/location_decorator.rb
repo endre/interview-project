@@ -1,3 +1,4 @@
+#TODO: Fahrenheight to Celsius converter
 class LocationDecorator
   attr_reader :object
 
@@ -6,6 +7,4 @@ class LocationDecorator
   def initialize(object)
     @object = object
   end
-
-
 end

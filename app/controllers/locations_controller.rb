@@ -6,6 +6,7 @@ class LocationsController < ApplicationController
   def create
     loc = Location.new(permitted_params)
     if loc.save
+      Weather::Fetchers::ByZip.call(Location.where(id: loc.id))
       redirect_to root_path, notice: 'Location saved'
     else
       render 'new'

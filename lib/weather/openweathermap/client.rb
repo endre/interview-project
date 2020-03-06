@@ -12,7 +12,7 @@ module Weather
         fetch_data
         success
       rescue StandardError => e
-        fail(e)
+        error(e)
       end
 
       private

@@ -3,6 +3,8 @@ module Weather
     class ByZip < ::DryService
       DEFAULT_OPTIONS = { units: :imperial }
 
+      param :locations, default: -> { Location.all }
+
       def call
         fetch
         success
@@ -14,7 +16,7 @@ module Weather
 
       # TODO: Do bulk update
       def fetch
-        Location.where.not(zip: nil).find_each do |loc|
+        locations.where.not(zip: nil).find_each do |loc|
           response = Weather::Openweathermap::Client.call(params: DEFAULT_OPTIONS.merge({ zip: loc.zip }))
           loc.update!(weather_data: response.body) if response.success?
         end

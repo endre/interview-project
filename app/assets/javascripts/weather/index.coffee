@@ -11,10 +11,10 @@ weatherIndex =
         html = []
         for loc in data
           html.push "<tr id='loc-#{loc.id}'><td>#{loc.name} (#{loc.zip})</td>" +
-                                           "<td>#{loc.current_temperature}</td>" +
-                                           "<td>#{loc.low_temperature}</td>" +
-                                           "<td>#{loc.high_temperature}</td>" +
-                                           "<td>#{loc.average_temperature}</td></tr>"
+                                           "<td>#{loc.current_temperature} &#8457;</td>" +
+                                           "<td>#{loc.high_temperature} &#8457;</td>" +
+                                           "<td>#{loc.low_temperature} &#8457;</td>" +
+                                           "<td>#{loc.average_temperature} &#8457;</td></tr>"
         $table.html(html)
       error: (data) ->
         console.log(data)
